@@ -1,0 +1,119 @@
+.article {
+    padding-top: 151px;
+    padding-bottom: 265px;
+}
+
+.article__title {
+    @include font;
+    font-weight: 700;
+font-size: 48px;
+line-height: 20px;
+color: #333333;
+text-align: center;
+margin-bottom: 80px;
+}
+.article__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.article__item{
+    background: #FEFEFE;
+border: 1px solid #E4E4E2;
+border-radius: 5px;
+height: 435px;
+}
+.article__item:nth-child(1) {
+  flex-grow: 1;
+}
+.article__item:nth-child(2){
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+.aticle__item:nth-child(3){
+    flex-grow: 1;
+}
+.article__img {
+    max-width: 305px;
+   
+}
+.article__inner {
+    padding: 21px 22px 37px 30px;
+}
+.article__data {
+    @include font;
+    font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #949494;
+text-align: end;
+margin-bottom: 2px;
+margin-left: auto;
+}
+.article__subtitle {
+    @include font;
+    font-weight: 700;
+font-size: 22px;
+line-height: 25px;
+color: #000000;
+margin-bottom: 10px;
+}
+.article__text {
+    @include font;
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+margin-bottom: 38px;
+}
+.article__link {
+    @include font;
+    font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #333333;
+}
+.article__link-wrap {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.article__sublink {
+    color: #3D9CEA;
+}
+
+@media only screen and (max-width:1330px) {
+    .article__list{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .article__link-wrap{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:1212px) {
+    .article__item{
+        max-width: 600px;
+    }
+
+}
+@media only screen and (max-width:550px) {
+    .article__item{
+     text-align: center;
+     max-width: 390px;
+     height: auto;
+    }
+    .article__inner {
+        padding: 2px 8px 10px 8px;
+    }
+    .img2{
+        display: none;
+    }
+    .article__title{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}

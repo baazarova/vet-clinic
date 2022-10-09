@@ -1,0 +1,115 @@
+.last {
+  background: #333333;
+  padding-top: 62px;
+  padding-bottom: 74px;
+  background-image: url(../../images/last-fish.png);
+  background-repeat: no-repeat;
+  background-position: 1000px center;
+  position: relative;
+  margin-bottom: 247px;
+}
+
+.last__map-wrap {
+  max-width: 462px;
+}
+.last__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.last__info-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: 449px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.last__title {
+  @include font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 14px;
+
+  color: #ffffff;
+}
+.last__text {
+  @include font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 29px;
+  max-width: 334px;
+}
+.last__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+.last__input {
+  max-width: 375px;
+  background: #ffffff;
+  border-radius: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  padding: 16px 188px 13px 22px;
+  border: none;
+}
+.last__txtarea {
+  max-width: 100%;
+  height: 165px;
+  padding: 16px 0 13px 22px;
+}
+.last__btn {
+  @include font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 14px 49px 15px 50px;
+  background: #ffbd54;
+  border-radius: 0px;
+
+  color: #ffffff;
+  max-width: 235px;
+}
+@media only screen and (max-width:1340px) {
+    .last__info-wrapper {
+        margin-right: 200px;
+    }
+}
+@media only screen and (max-width:1090px) {
+    .last__map {
+        position: absolute;
+        top: 0;
+        left: -100px;
+        height: 100%;
+      }
+}
+@media only screen and (max-width:1000px) {
+    .last__map {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        height: 100%;
+      }
+      .last__info-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+@media only screen and (max-width:724px) {
+    .last__map{
+        display: none;
+    }
+    .last__title{
+        font-size: 28px;
+    }
+}
